@@ -1,0 +1,170 @@
+html{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+}
+body{
+    background-image: url("https://media.discordapp.net/attachments/944138097749274656/1151049675730862132/Home.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+main{
+    height: auto;
+}
+.crop{
+    font-family: 'Noto Sans Thai', sans-serif;
+    font-size: 1rem;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    width: 420px;
+    margin-top: 2rem;
+}
+.container{
+    width: auto;
+    margin: 0 10rem;
+}
+.header-inner{
+    align-items: right;
+    text-align: right;
+    margin-bottom: 8rem;
+}
+.nav-bar{
+    cursor: pointer;
+    padding: 0;
+}
+.content{
+    margin: 5% 0;
+    color: white;
+}
+.find-button{
+    font-family: 'Noto Sans Thai', sans-serif;
+    color: black;
+    width: 7rem;
+    background-color: hsl(0,1%,80%);
+    padding: 0.5rem 1.25rem;
+    text-align: center;
+    font-size: 1.25rem;
+    border-radius: 2rem;
+    margin-top: 2rem;
+    cursor: pointer;
+    transition: 0.3s
+}
+.find-button:hover{
+    background-color: white;
+}
+.to-continue{
+    font-style: normal;
+    font-family: 'Noto Sans Thai', sans-serif;
+    display: none;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+@media (width<=1500px){
+    .logo{
+        width: 500px;
+        height: 350px;
+    }
+    .container{
+        margin: 7rem;
+    }
+    .crop{
+        margin-top: 1rem;
+    }
+}
+@media (width<=1000px){
+    .logo{
+        width: 400px;
+        height: 250px;
+        margin-top: 3rem;
+    }
+    .container{
+        margin: 5rem;
+    }
+    .crop{
+        margin-top: 0.5rem;
+    }
+}
+@media (width<=700px){
+    body{
+        background-position: right;
+    }
+    .logo{
+        width: 350px;
+        height: 200px;
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-top: 0;
+    }
+    .container{
+        margin: 0;
+    }
+    .crop{
+        display: none;
+    }
+    .find-button{
+        display: none;
+    }
+    .nav-bar{
+        content: url("https://media.discordapp.net/attachments/944138097749274656/1151074938829156402/image.png");
+        margin: 4rem 2rem;
+        width: 40px;
+        height: 17.5px;
+    }
+    .to-continue{
+        display: flex;
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+@media (width<=400px){
+    body{
+        background-position: right;
+    }
+    .logo{
+        width: 275px;
+        height: 150px;
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-top: 0;
+    }
+    .container{
+        margin: 0;
+    }
+    .crop{
+        display: none;
+    }
+    .find-button{
+        display: none;
+    }
+    .nav-bar{
+        content: url("https://media.discordapp.net/attachments/944138097749274656/1151074938829156402/image.png");
+        margin: 2rem 2rem;
+        width: 30px;
+        height: 12px;
+    }
+    .to-continue{
+        font-size: 11px;
+        display: flex;
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
