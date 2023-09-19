@@ -4,7 +4,7 @@ html{
     background-size: cover;
 }
 body{
-    background-image: url("https://media.discordapp.net/attachments/944138097749274656/1151049675730862132/Home.png");
+    background-image: url("images/Home_Background.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -36,6 +36,7 @@ main{
 .nav-bar{
     cursor: pointer;
     padding: 0;
+    transition: 0.3s;
 }
 .content{
     margin: 5% 0;
@@ -118,7 +119,7 @@ main{
         display: none;
     }
     .nav-bar{
-        content: url("https://media.discordapp.net/attachments/944138097749274656/1151074938829156402/image.png");
+        content: url("images/Nav_Bar_Responsive.png");
         margin: 4rem 2rem;
         width: 40px;
         height: 17.5px;
@@ -154,7 +155,7 @@ main{
         display: none;
     }
     .nav-bar{
-        content: url("https://media.discordapp.net/attachments/944138097749274656/1151074938829156402/image.png");
+        content: url("images/Nav_Bar_Responsive.png");
         margin: 2rem 2rem;
         width: 30px;
         height: 12px;
