@@ -1,0 +1,13 @@
+html{
+    width: auto;
+    height: 100%;
+}
+body{
+    height: 425%;
+    width: auto;
+    background-image: url("../images/Building.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+

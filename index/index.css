@@ -5,7 +5,7 @@ html{
     overflow: hidden;
 }
 body{
-    background-image: url("images/Home_Background.png");
+    background-image: url("../images/Home_Background.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
