@@ -5,13 +5,14 @@ html{
     overflow: hidden;
 }
 body{
-    background-image: url("https://media.discordapp.net/attachments/944138097749274656/1151049675730862132/Home.png");
+    background-image: url("images/Home_Background.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+    overflow: hidden;
 }
 main{
     height: auto;
