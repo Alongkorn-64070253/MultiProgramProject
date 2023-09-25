@@ -79,7 +79,7 @@ main{
         margin-top: 1rem;
     }
     .popup .popuptext{
-        transform: translate(0%, 7%);
+        transform: translate(0%, 5%);
     }
 }
 @media (width<=1000px){
@@ -329,7 +329,7 @@ a:hover{
     text-align: center;
     margin-top: -20%;
     padding-top: 36%;
-    padding-bottom: 100%;
+    padding-bottom: 150%;
     position: absolute;
     z-index: 3;
     top: 0%;
