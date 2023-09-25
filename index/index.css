@@ -78,6 +78,9 @@ main{
     .crop{
         margin-top: 1rem;
     }
+    .about-work{
+        right: 18%;
+    }
 }
 @media (width<=1000px){
     .logo{
@@ -90,6 +93,9 @@ main{
     }
     .crop{
         margin-top: 0.5rem;
+    }
+    .about-work{
+        right: 15%;
     }
 }
 @media (width<=700px){
@@ -133,6 +139,12 @@ main{
     
         transition: opacity 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
     }
+    .about-work{
+        display: none;
+    }
+    #music{
+        display: none;
+    }
 }
 @media (width<=400px){
     body{
@@ -172,69 +184,69 @@ main{
     }
 }
 a{
-  text-decoration: none;
-  color:  rgb(158, 158, 158);
-  font-family: 'Noto Sans Thai', sans-serif;
-  transition: color 0.3s ease;
+    text-decoration: none;
+    color:  rgb(158, 158, 158);
+    font-family: 'Noto Sans Thai', sans-serif;
+    transition: color 0.3s ease;
 }
 a:hover{
-  color: black;
+    color: black;
 }
 #menuToggle{
-  display: block;
-  position: absolute;
-  top: 70px;
-  right: 8%;
-  
-  z-index: 1;
-  
-  -webkit-user-select: none;
-  user-select: none;
+    display: block;
+    position: absolute;
+    top: 70px;
+    right: 8%;
+    
+    z-index: 1;
+    
+    -webkit-user-select: none;
+    user-select: none;
 }
 #menuToggle input{
-  display: block;
-  width: 40px;
-  height: 30px;
-  position: absolute;
-  top: -7px;
-  left: -5px;
+    display: block;
+    width: 40px;
+    height: 30px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
 
-  cursor: pointer;
-  
-  opacity: 0; /* hide this */
-  z-index: 2; /* and place it over the hamburger */
-  
-  -webkit-touch-callout: none;
+    cursor: pointer;
+    
+    opacity: 0; /* hide this */
+    z-index: 2; /* and place it over the hamburger */
+    
+    -webkit-touch-callout: none;
 }
 
 /*
  * Just a quick hamburger
  */
 #menuToggle span{
-  display: block;
-  width: 33px;
-  height: 4px;
-  margin-bottom: 5px;
-  position: relative;
-  
-  background: #cdcdcd;
-  border-radius: 3px;
-  
-  z-index: 1;
-  
-  transform-origin: 4px 0px;
-  
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    
+    background: #cdcdcd;
+    border-radius: 3px;
+    
+    z-index: 1;
+    
+    transform-origin: 4px 0px;
+    
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
 }
 
 #menuToggle span:first-child{
-  transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
 }
 
 #menuToggle span:nth-last-child(2){
-  transform-origin: 0% 100%;
+    transform-origin: 0% 100%;
 }
 
 /* 
@@ -242,25 +254,25 @@ a:hover{
  * into a crossmark.
  */
 #menuToggle input:checked ~ span{
-  opacity: 1;
-  transform: rotate(45deg) translate(-2px, -1px);
-  background: white;
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: white;
 }
 
 /*
  * But let's hide the middle one.
  */
 #menuToggle input:checked ~ span:nth-last-child(3){
-  opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
 }
 
 /*
  * Ohyeah and the last one should go the other direction
  */
 #menuToggle input:checked ~ span:nth-last-child(2){
-  opacity: 1;
-  transform: rotate(-45deg) translate(0, -1px);
+    opacity: 1;
+    transform: rotate(-45deg) translate(0, -1px);
 }
 
 /*
@@ -268,37 +280,66 @@ a:hover{
  * at the top left of the screen
  */
 #menu{
-  position: absolute;
-  width: 150px;
-  margin: 1rem 0;
-  padding: 30px;
-  padding-top: 0;
-  right: 10px;
-  
-  background: #ededed;
-  list-style-type: none;
-  -webkit-font-smoothing: antialiased;
-  /* to stop flickering of text in safari */
-  
-  transform-origin: 0% 0%;
-  transform: translate(200%, 0);
-  
-  transition: transform 0s cubic-bezier(0.77,0.2,0.05,1.0);
+    position: absolute;
+    width: 150px;
+    margin: 1rem 0;
+    padding: 30px;
+    padding-top: 0;
+    right: 10px;
+    border-radius: 12px;
+    
+    background: #ededed;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
+    
+    transform-origin: 0% 0%;
+    transform: translate(200%, 0);
+    
+    transition: transform 0s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
 #menu li{
-  padding: 10px 0;
-  font-size: 15px;
+    padding: 10px 0;
+    font-size: 15px;
 }
 
 /*
  * And let's fade it in from the left
  */
 #menuToggle input:checked ~ ul{
-  transform: none;
-  opacity: 1;
+    transform: none;
+    opacity: 1;
 }
 #headmenu{
     padding: 1rem;
     color: black;
+}
+
+.about-work{
+    color: rgb(187, 187, 187);
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: 'Noto Sans Thai', sans-serif;
+    position: absolute;
+    right: 12%;
+    top: 62px;
+    transition: 0.3s;
+}
+.about-work:hover{
+    color: white;
+    cursor: pointer;
+}
+
+#music input{
+    content: url("../images/Music_On.png");
+    appearance: none;
+    cursor: pointer;
+    display: block;
+    width: 50px;
+    height: 40px;
+    margin: 4rem 0;
+}
+#music input:checked{
+    content: url("../images/Music_Off.png");
 }
