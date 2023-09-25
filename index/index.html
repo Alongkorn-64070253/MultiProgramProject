@@ -66,7 +66,8 @@
                     กดหน้าจอเพื่อไปต่อ
                 </a>
                 <div id="music">
-                    <input type="checkbox">
+                    <input id="play-check" type="checkbox" onclick="playMusic()">
+                    <audio id="audio" src="../music/He-man.mp3" autoplay loop></audio>
                 </div>
             </div>
         </div>
@@ -77,6 +78,17 @@
     function myFunction() {
       var popup = document.getElementById("myPopup");
       popup.classList.toggle("show");
+    }
+
+    function playMusic() {
+        var checkBox = document.getElementById("play-check");
+        var audio = document.getElementById("audio");
+        if (checkBox.checked == true) {
+            audio.pause();
+        }
+        else {
+            audio.play();
+        }
     }
     </script>
 </body>
