@@ -18,8 +18,15 @@
     <div class="container">
         <div class="container-space">
             <div class="content">
-                <div class="about-work">
-                    เกี่ยวกับงาน
+                <div class="popup" onclick="myFunction()">เกี่ยวกับงาน
+                    <span class="popuptext" id="myPopup">เกี่ยวกับงาน<br>
+                    ผลงานชิ้นนี้เราจัดทำขึ้นเพื่อบอกเล่าเรื่องราวและเหตุผล<br>
+                    ของเพื่อน ๆ ที่หลุดออกจากระบบการศึกษาผ่านการตามหาตัวละคร 'เก่ง'<br>
+                    เพื่อนนักเรียนที่ขยันเพียรมากคนนึง<br>
+                    ในทุก ๆ กิจกรรมจะเจอเก่งในนั้น แต่จู่ ๆ เก่งก็หายไป<br><br>
+                    โดยผู้เล่นจะสามารถกดไปที่สิ่งของ สถานที่หรือเพื่อนนักเรียนคนอื่น ๆ<br>
+                    เพื่อหาเบาะแสของเก่งและได้รับรู้ถึงปัญหาของพวกเขา
+                    </span>
                 </div>
                 <nav role="navigation">
                     <div id="menuToggle">
@@ -42,11 +49,11 @@
                     -->
                     <ul id="menu">
                     <a id="headmenu"><li>MENU</li></a>
-                    <a href=""><li></li></a>
-                    <a href=""><li>01 อารัมภบท</li></a>
-                    <a href=""><li>02 เรื่องราวของ "เก่ง"</li></a>
-                    <a href=""><li>03 บทสรุป</li></a>
-                    <a href=""><li>04 สนับสนุน</li></a>
+                    <a href="#"><li></li></a>
+                    <a href="#"><li>01 อารัมภบท</li></a>
+                    <a href="#"><li>02 เรื่องราวของ "เก่ง"</li></a>
+                    <a href="#"><li>03 บทสรุป</li></a>
+                    <a href="#"><li>04 สนับสนุน</li></a>
                     </ul>
                     </div>
                 </nav>
@@ -55,9 +62,9 @@
                 <a style="text-decoration:none" href="../intro/intro.html">
                     <div class="find-button">เริ่มตามหา</div>
                 </a>
-                <div class="to-continue">
+                <a class="to-continue" href="../intro/intro.html">
                     กดหน้าจอเพื่อไปต่อ
-                </div>
+                </a>
                 <div id="music">
                     <input type="checkbox">
                 </div>
@@ -65,5 +72,12 @@
         </div>
     </div>
 </main>
+    <script>
+    // When the user clicks on div, open the popup
+    function myFunction() {
+      var popup = document.getElementById("myPopup");
+      popup.classList.toggle("show");
+    }
+    </script>
 </body>
 </html>
