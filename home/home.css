@@ -19,11 +19,11 @@ main{
 }
 .crop{
     font-family: 'Noto Sans Thai', sans-serif;
-    font-size: 1rem;
+    font-size: 1.1rem;
     overflow-wrap: break-word;
     word-wrap: break-word;
     word-break: break-word;
-    width: 420px;
+    width: 520px;
     margin-top: 2rem;
 }
 .container{
@@ -44,7 +44,7 @@ main{
     font-size: 1.25rem;
     border-radius: 2rem;
     margin-top: 2rem;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
     cursor: pointer;
     transition: 0.3s
 }
