@@ -36,7 +36,7 @@ main{
     text-align: center;
     font-size: 30px;
     position: absolute;
-    top: 50%;
+    top: 42%;
     left: 50%;
     transform: translate(-50%, -50%);
     /*animation: fadeInAnimation ease 3s;

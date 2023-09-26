@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="index.css" />
+    <script src="index.js"></script>
     <title>My Missing Friend</title>
 </head>
 <body>
@@ -18,45 +19,45 @@
     <div class="container">
         <div class="container-space">
             <div class="content">
-                <div class="popup" onclick="myFunction()">เกี่ยวกับงาน
-                    <span class="popuptext" id="myPopup">เกี่ยวกับงาน<br>
-                    ผลงานชิ้นนี้เราจัดทำขึ้นเพื่อบอกเล่าเรื่องราวและเหตุผล<br>
-                    ของเพื่อน ๆ ที่หลุดออกจากระบบการศึกษาผ่านการตามหาตัวละคร 'เก่ง'<br>
-                    เพื่อนนักเรียนที่ขยันเพียรมากคนนึง<br>
-                    ในทุก ๆ กิจกรรมจะเจอเก่งในนั้น แต่จู่ ๆ เก่งก็หายไป<br><br>
-                    โดยผู้เล่นจะสามารถกดไปที่สิ่งของ สถานที่หรือเพื่อนนักเรียนคนอื่น ๆ<br>
-                    เพื่อหาเบาะแสของเก่งและได้รับรู้ถึงปัญหาของพวกเขา
-                    </span>
-                </div>
-                <nav role="navigation">
-                    <div id="menuToggle">
-                    <!--
-                    A fake / hidden checkbox is used as click reciever,
-                    so you can use the :checked selector on it.
-                    -->
-                    <input type="checkbox" />
-                    <!--
-                    Some spans to act as a hamburger.
-                    They are acting like a real hamburger,
-                    not that McDonalds stuff.
-                    -->
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <!--
-                    Too bad the menu has to be inside of the button
-                    but hey, it's pure CSS magic.
-                    -->
-                    <ul id="menu">
-                    <a id="headmenu"><li>MENU</li></a>
-                    <a href="#"><li></li></a>
-                    <a href="#"><li>01 อารัมภบท</li></a>
-                    <a href="#"><li>02 เรื่องราวของ "เก่ง"</li></a>
-                    <a href="#"><li>03 บทสรุป</li></a>
-                    <a href="#"><li>04 สนับสนุน</li></a>
-                    </ul>
+                    <div class="popup" onclick="myFunction()">เกี่ยวกับงาน
+                        <span class="popuptext" id="myPopup">เกี่ยวกับงาน<br>
+                        ผลงานชิ้นนี้เราจัดทำขึ้นเพื่อบอกเล่าเรื่องราวและเหตุผล<br>
+                        ของเพื่อน ๆ ที่หลุดออกจากระบบการศึกษาผ่านการตามหาตัวละคร 'เก่ง'<br>
+                        เพื่อนนักเรียนที่ขยันเพียรมากคนนึง<br>
+                        ในทุก ๆ กิจกรรมจะเจอเก่งในนั้น แต่จู่ ๆ เก่งก็หายไป<br><br>
+                        โดยผู้เล่นจะสามารถกดไปที่สิ่งของ สถานที่หรือเพื่อนนักเรียนคนอื่น ๆ<br>
+                        เพื่อหาเบาะแสของเก่งและได้รับรู้ถึงปัญหาของพวกเขา
+                        </span>
                     </div>
-                </nav>
+                    <nav role="navigation">
+                        <div id="menuToggle">
+                        <!--
+                        A fake / hidden checkbox is used as click reciever,
+                        so you can use the :checked selector on it.
+                        -->
+                        <input type="checkbox" />
+                        <!--
+                        Some spans to act as a hamburger.
+                        They are acting like a real hamburger,
+                        not that McDonalds stuff.
+                        -->
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <!--
+                        Too bad the menu has to be inside of the button
+                        but hey, it's pure CSS magic.
+                        -->
+                        <ul id="menu">
+                        <a id="headmenu"><li>MENU</li></a>
+                        <a href="#"><li></li></a>
+                        <a href="#"><li>01 อารัมภบท</li></a>
+                        <a href="#"><li>02 เรื่องราวของ "เก่ง"</li></a>
+                        <a href="#"><li>03 บทสรุป</li></a>
+                        <a href="#"><li>04 สนับสนุน</li></a>
+                        </ul>
+                        </div>
+                    </nav>
                 <img class="logo" src="../images/Logo.png" width="600px" height="400px">
                 <div class="crop">เพราะความเหลื่อมล้ำของระบบการศึกษาไทย ทำให้เพื่อนของเราหายไป ร่วมตามหา และทำความเข้าใจไปพร้อมกัน</div>
                 <a style="text-decoration:none" href="../intro/intro.html">
@@ -73,23 +74,5 @@
         </div>
     </div>
 </main>
-    <script>
-    // When the user clicks on div, open the popup
-    function myFunction() {
-      var popup = document.getElementById("myPopup");
-      popup.classList.toggle("show");
-    }
-
-    function playMusic() {
-        var checkBox = document.getElementById("play-check");
-        var audio = document.getElementById("audio");
-        if (checkBox.checked == true) {
-            audio.pause();
-        }
-        else {
-            audio.play();
-        }
-    }
-    </script>
 </body>
 </html>

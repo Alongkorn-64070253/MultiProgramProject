@@ -30,10 +30,6 @@ main{
     width: auto;
     margin: 0 10rem;
 }
-.nav-bar{
-    cursor: pointer;
-    padding: 0;
-}
 .content{
     margin: 55px 0;
     color: white;
@@ -48,6 +44,7 @@ main{
     font-size: 1.25rem;
     border-radius: 2rem;
     margin-top: 2rem;
+    margin-bottom: 4rem;
     cursor: pointer;
     transition: 0.3s
 }
@@ -58,6 +55,9 @@ main{
     font-style: normal;
     font-family: 'Noto Sans Thai', sans-serif;
     display: none;
+}
+.logo{
+    margin-top: 7%;
 }
 @keyframes fadeInAnimation {
     0% {
@@ -74,6 +74,7 @@ main{
     }
     .container{
         margin: 0 5rem;
+        margin-right: 15%;
     }
     .crop{
         margin-top: 1rem;
@@ -86,10 +87,10 @@ main{
     .logo{
         width: 400px;
         height: 250px;
-        margin-top: 3rem;
     }
     .container{
         margin: 0 4rem;
+        margin-right: 25%;
     }
     .crop{
         margin-top: 0.5rem;
@@ -137,7 +138,7 @@ main{
         display: none;
     }
     #music{
-        display: none;
+        margin-left: 10%;
     }
 }
 @media (width<=400px){
@@ -169,6 +170,80 @@ main{
         top: 80%;
         left: 50%;
         transform: translate(-50%, -50%);
+    }
+}
+@media (height<=800px){
+    .logo{
+        width: 400px;
+        height: 250px;
+    }
+    .find-button{
+        width: 5.5rem;
+        font-size: 1rem;
+    }
+}
+@media (height<=750px){
+    .logo{
+        width: 350px;
+        height: 220px;
+    }
+    .find-button{
+        width: 5rem;
+        font-size: 0.8rem;
+        margin-bottom: 3rem 0;
+    }
+    .crop{
+        font-size: 0.8rem;
+        width: 300px;
+    }
+    .content{
+        margin: 10px 0;
+        padding-top: -50% 0;
+    }
+    #menuToggle{
+        transform: translate(-3rem, -2.8rem);
+    }
+}
+@media (height<=600px){
+    .logo{
+        width: 250px;
+        height: 150px;
+        margin-top: 5%;
+    }
+    .find-button{
+        width: 4rem;
+        font-size: 0.8rem;
+    }
+    .popup .popuptext{
+        transform: translate(0, -2rem);
+    }
+}
+@media (height<=500px){
+    .logo{
+        margin-top: 0;
+    }
+    .crop{
+        margin-top: 3px;
+    }
+    .find-button{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .popup .popuptext{
+        transform: translate(0, -3rem);
+    }
+}
+@media (height<=400px){
+    .logo{
+        width: 200px;
+        height: 100px;
+    }
+    .find-button{
+        width: 3rem;
+        font-size: 0.5rem;
+    }
+    .popup .popuptext{
+        transform: translate(0, -7rem);
     }
 }
 a{
@@ -305,16 +380,15 @@ a:hover{
 }
 
 .popup{
-    position: static;
-    text-align: right;
+    text-align: center;
     cursor: pointer;
     color: rgb(187, 187, 187);
     font-size: 1.5rem;
     font-weight: 500;
     font-family: 'Noto Sans Thai', sans-serif;
-    padding-right: 4rem;
-    padding-bottom: 6rem;
     transition: 0.3s;
+    width: 8rem;
+    margin-left: 88%;
 }
 .popup:hover{
     color: white;
@@ -347,7 +421,6 @@ a:hover{
     display: block;
     width: 50px;
     height: 40px;
-    margin: 4rem 0;
 }
 #music input:checked{
     content: url("../images/Music_Off.png");
