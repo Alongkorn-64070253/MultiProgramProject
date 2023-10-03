@@ -16,19 +16,32 @@ body{
     animation-fill-mode: forwards;
     overflow: hidden;
     width: auto;
+    height: 1080px;
 }
 main{
     height: auto;
 }
 .container{
     width: auto;
+    margin: 0 10rem;
 }
+
 .content{
+    margin: 12% 0;
     color: white;
 }
-.text{
+
+#text-box {
+    width: 100%;
     text-align: center;
-    margin-top: 50%;
+    font-size: 30px;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*animation: fadeInAnimation ease 3s;
+    -webkit-transition: all .5s;
+    transition: all .5s;*/
 }
 
 @keyframes fadeInAnimation {
@@ -64,4 +77,14 @@ main{
     .container{
         margin: 0;
     }
+}
+p { 
+    opacity: 1; 
+    transition-property: all;
+    transition-duration: 1.5s;
+    transition-timing-function: ease;
+    transition-delay: none; 
+}
+p.hide { 
+    opacity: 0;  
 }
