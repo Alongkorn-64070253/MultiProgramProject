@@ -8,7 +8,7 @@ function change() {
         p.classList.remove('hide')
     }, 1500);
     if (idx == 3){
-        location.href = '../download/download.html'
+        location.href = '../02_download/download.html'
     }
 }
 
