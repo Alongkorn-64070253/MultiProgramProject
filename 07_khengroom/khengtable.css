@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Mitr&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+html{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+body{
+    font-family: 'Kanit', sans-serif;
+    background-image: url("../images/khengtable.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    width: auto;
+    height: 1080px;
+}
+main{
+    height: auto;
+}
+.container{
+    width: auto;
+    margin: 0 10rem;
+}
+
+.content{
+    margin: 12% 0;
+    color: white;
+}
+
+#text-box {
+    cursor: pointer;
+    width: auto;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*animation: fadeInAnimation ease 3s;
+    -webkit-transition: all .5s;
+    transition: all .5s;*/
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+@media (width<=1500px){
+    .container{
+        margin: 7rem;
+    }
+}
+@media (width<=1000px){
+    .container{
+        margin: 5rem;
+    }
+}
+@media (width<=700px){
+    body{
+        background-position: right;
+    }
+    .container{
+        margin: 0;
+    }
+}
+@media (width<=400px){
+    body{
+        background-position: right;
+    }
+    .container{
+        margin: 0;
+    }
+}
+p { 
+    opacity: 1; 
+    transition-property: all;
+    transition-duration: 1.5s;
+    transition-timing-function: ease;
+    transition-delay: none; 
+}
+p.hide { 
+    opacity: 0;  
+}
+.popup{
+    position: absolute;
+    text-align: center;
+    cursor: pointer;
+    background-color: white;
+    color: rgb(187, 187, 187);
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: 'Noto Sans Thai', sans-serif;
+    transition: 0.3s;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    top: 55%;
+    left: 40%;
+}
+
+.popup .popuptext{
+    width: 3000px;
+    height: 3000px;
+    visibility: hidden;
+    background-image: url("../images/bills_table.png");
+    background-repeat: no-repeat;
+    background-size: 15%;
+    background-position: center;
+    background-color: black;
+    position: absolute;
+    z-index: 3;
+    transform: translate(-43%, -53%);
+    opacity: 0.9;
+}
+.popup .show{
+    visibility: visible;
+}
+.popup2{
+    position: absolute;
+    text-align: center;
+    cursor: pointer;
+    background-color: white;
+    color: rgb(187, 187, 187);
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: 'Noto Sans Thai', sans-serif;
+    transition: 0.3s;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    top: 45%;
+    left: 59%;
+}
+
+.popup2 .popuptext2{
+    width: 3000px;
+    height: 3000px;
+    visibility: hidden;
+    background-image: url("../images/id_table.png");
+    background-repeat: no-repeat;
+    background-size: 15%;
+    background-position: center;
+    background-color: black;
+    position: absolute;
+    z-index: 3;
+    transform: translate(-57%, -50%);
+    opacity: 0.9;
+}
+.popup2 .show2{
+    visibility: visible;
+}
+.circle{
+    z-index: -1;
+    position: absolute;
+    left: 39.25%;
+    top: 53.5%;
+    background-color: white;
+    border-radius: 40px;
+    width: 3.75rem;
+    height: 3.75rem;
+    opacity: 0.75;
+    animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+.circle2{
+    z-index: -1;
+    position: absolute;
+    left: 58.25%;
+    top: 43.5%;
+    background-color: white;
+    border-radius: 40px;
+    width: 3.75rem;
+    height: 3.75rem;
+    opacity: 0.75;
+    animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+@keyframes ping {
+    75%,
+    100% {
+      transform: scale(2);
+      opacity: 0;
+    }
+}
