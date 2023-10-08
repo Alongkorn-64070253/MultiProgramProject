@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Mitr&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
 html{
+    background-size: cover;
     height: 100%;
     width: 100%;
     overflow: hidden;
@@ -11,57 +12,118 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    animation: fadeInAnimation ease 3s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
     overflow: hidden;
-    width: auto;
 }
 main{
     height: auto;
 }
 .container{
     width: auto;
+    margin: 0;
 }
 .content{
-    color: white;
+    color: rgb(179, 179, 179);
 }
 .text{
+    position: absolute;
+    font-size: 1.5rem;
+    animation: text-twinkling 3s infinite;
+    animation-fill-mode: forwards;
     text-align: center;
-    margin-top: 50%;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
-
+.dot{
+    cursor: pointer;
+    position: absolute;
+    left: 59.25%;
+    top: 43.5%;
+    background: grey;
+    border-radius: 40px;
+    width: 2rem;
+    height: 2rem;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+}
+.circle{
+    position: absolute;
+    margin-left: 57.3%;
+    margin-top: 19.2%;
+    background-color: grey;
+    border-radius: 40px;
+    width: 3.75rem;
+    height: 3.75rem;
+    opacity: 0.75;
+    animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+.light{
+    opacity: 0.3;
+    rotate: 2deg;
+    background-size: cover;
+    position: absolute;
+    width: 900px;
+    height: 1000px;
+    z-index: -1;
+    background-image: url("../images/light_khengroom.png");
+    top: 56%;
+    left: 43.5%;
+    animation: light 3s infinite;
+    animation-fill-mode: forwards;
+    transform: translate(-50%, -50%);
+}
+@keyframes light{
+    0% {
+        opacity: 0;
+    }
+    45% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.3;
+    }
+    55%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes ping {
+    75%,
+    100% {
+      transform: scale(2);
+      opacity: 0;
+    }
+}
 @keyframes fadeInAnimation {
     0% {
         opacity: 0;
     }
     100% {
         opacity: 1;
-     }
+    }
+}
+@keyframes text-twinkling {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }
 @media (width<=1500px){
-    .container{
-        margin: 7rem;
-    }
+
 }
 @media (width<=1000px){
-    .container{
-        margin: 5rem;
-    }
+    
 }
 @media (width<=700px){
-    body{
-        background-position: right;
-    }
-    .container{
-        margin: 0;
-    }
+    
 }
 @media (width<=400px){
-    body{
-        background-position: right;
-    }
-    .container{
-        margin: 0;
-    }
+    
 }
