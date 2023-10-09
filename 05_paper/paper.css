@@ -40,7 +40,7 @@ main{
         opacity: 1;
      }
 }
-@media (width<=1500px){
+/* @media (width<=1500px){
     .container{
 
     }
@@ -65,7 +65,7 @@ main{
     .container{
         
     }
-}
+} */
 
 .bottomDialogBox{
     width: 100%;
