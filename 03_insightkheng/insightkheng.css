@@ -68,21 +68,13 @@ body{
     top: 82%;
     left: 50%;
     transform: translate(-50%, -50%);
-    animation: fadeloop 1.25s alternate infinite;
+    animation: fadeInAnimation 1.25s alternate infinite;
     /*animation: fadeInAnimation ease 3s;
     -webkit-transition: all .5s;
     transition: all .5s;*/
 }
 
 @keyframes fadeInAnimation {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-     }
-}
-@keyframes fadeloop {
     0% {
         opacity: 0;
     }

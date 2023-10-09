@@ -7,6 +7,8 @@ html{
 }
 body{
     font-family: 'Kanit', sans-serif;
+    text-shadow: 0px 2px 2px rgba(29, 29, 29, 0.55);
+    margin: 0;
     background-image: url("../images/scene_paperclassroom.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -19,16 +21,15 @@ body{
     height: 1080px;
 }
 main{
-    height: auto;
+    color: white;
 }
 .container{
-    width: auto;
-    margin: 0 10rem;
+    width: 100%;
+    height: 100%;
 }
 
 .content{
-    margin: 12% 0;
-    color: white;
+    width: 100%;
 }
 
 @keyframes fadeInAnimation {
@@ -41,37 +42,53 @@ main{
 }
 @media (width<=1500px){
     .container{
-        margin: 7rem;
+
     }
 }
 @media (width<=1000px){
     .container{
-        margin: 5rem;
+        
     }
 }
 @media (width<=700px){
     body{
-        background-position: right;
+        
     }
     .container{
-        margin: 0;
+        
     }
 }
 @media (width<=400px){
     body{
-        background-position: right;
+
     }
     .container{
-        margin: 0;
+        
     }
 }
-p { 
-    opacity: 1; 
-    transition-property: all;
-    transition-duration: 1.5s;
-    transition-timing-function: ease;
-    transition-delay: none; 
+
+.bottomDialogBox{
+    width: 100%;
+    height: 30%;
+    bottom: 0;
+    margin: auto auto;
+    position: absolute;
+    background-color: black;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 1));
+    text-align: center;
 }
-p.hide { 
-    opacity: 0;  
+
+p{
+    margin: 0;
+}
+
+#text-box2 {
+    margin-top: 5%;
+    margin-bottom: 3%;
+    font-size: 30px;
+}
+
+#text-box3 {
+    font-size: 14px;
+    animation: fadeInAnimation 1.25s alternate infinite;
 }
