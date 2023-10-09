@@ -52,32 +52,6 @@ main{
         opacity: 1;
      }
 }
-@media (width<=1500px){
-    .container{
-        margin: 7rem;
-    }
-}
-@media (width<=1000px){
-    .container{
-        margin: 5rem;
-    }
-}
-@media (width<=700px){
-    body{
-        background-position: right;
-    }
-    .container{
-        margin: 0;
-    }
-}
-@media (width<=400px){
-    body{
-        background-position: right;
-    }
-    .container{
-        margin: 0;
-    }
-}
 p { 
     opacity: 1; 
     transition-property: all;

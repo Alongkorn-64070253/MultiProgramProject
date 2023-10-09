@@ -48,8 +48,8 @@ main{
 }
 .circle{
     position: absolute;
-    margin-left: 57.3%;
-    margin-top: 19.2%;
+    margin-left: -40%;
+    margin-top: -30%;
     background-color: grey;
     border-radius: 40px;
     width: 3.75rem;
@@ -68,8 +68,7 @@ main{
     background-image: url("../images/light_khengroom.png");
     top: 56%;
     left: 43.5%;
-    animation: light 3s infinite;
-    animation-fill-mode: forwards;
+    
     transform: translate(-50%, -50%);
 }
 @keyframes light{
@@ -115,15 +114,47 @@ main{
         opacity: 0;
     }
 }
-@media (width<=1500px){
-
+@media (width<=1700px){
+    .light{
+        width: 800px;
+        height: 1000px;
+        transform: translate(-50%, -45%);
+    }
+}@media (width<=1600px){
+    .light{
+        width: 800px;
+        height: 1000px;
+        transform: translate(-52%, -45%);
+    }
+}
+@media (width<=1300px){
+    .light{
+        transform: translate(-55%, -45%);
+    }
 }
 @media (width<=1000px){
-    
+    .dot{
+        transform: translate(50%, -50%);
+    }
+    .light{
+        transform: translate(-57%, -45%);
+    }
 }
 @media (width<=700px){
-    
+    .dot{
+        transform: translate(120%, -50%);
+    }
+    .light{
+        transform: translate(-60%, -45%);
+    }
+}
+@media (width<=600px){
+    .light{
+        transform: translate(-60%, -45%);
+    }
 }
 @media (width<=400px){
-    
+    .dot{
+        transform: translate(200%, -50%);
+    }
 }

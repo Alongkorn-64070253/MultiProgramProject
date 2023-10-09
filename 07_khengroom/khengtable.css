@@ -52,29 +52,32 @@ main{
      }
 }
 @media (width<=1500px){
-    .container{
-        margin: 7rem;
+    .popup{
+        transform: translate(-50px, 0%);
+    }
+    .popup2{
+        transform: translate(50px, 0%);
+    }
+    .popup .popuptext{
+        background-size: 5%;
     }
 }
 @media (width<=1000px){
-    .container{
-        margin: 5rem;
+    .popup{
+        transform: translate(-100px, 0%);
+    }
+    .popup2{
+        transform: translate(100px, 0%);
     }
 }
 @media (width<=700px){
-    body{
-        background-position: right;
-    }
-    .container{
-        margin: 0;
+    .popup{
+        transform: translate(-150px, 0%);
     }
 }
 @media (width<=400px){
-    body{
-        background-position: right;
-    }
-    .container{
-        margin: 0;
+    .popup{
+        transform: translate(-150px, 0%);
     }
 }
 p { 
@@ -112,11 +115,10 @@ p.hide {
     background-repeat: no-repeat;
     background-size: 15%;
     background-position: center;
-    background-color: black;
+    background-color: rgb(0, 0, 0, 0.8);
     position: absolute;
     z-index: 3;
     transform: translate(-43%, -53%);
-    opacity: 0.9;
 }
 .popup .show{
     visibility: visible;
@@ -146,11 +148,10 @@ p.hide {
     background-repeat: no-repeat;
     background-size: 15%;
     background-position: center;
-    background-color: black;
+    background-color: rgb(0, 0, 0, 0.8);
     position: absolute;
     z-index: 3;
     transform: translate(-57%, -50%);
-    opacity: 0.9;
 }
 .popup2 .show2{
     visibility: visible;
@@ -158,8 +159,8 @@ p.hide {
 .circle{
     z-index: -1;
     position: absolute;
-    left: 39.25%;
-    top: 53.5%;
+    left: -40%;
+    top: -30%;
     background-color: white;
     border-radius: 40px;
     width: 3.75rem;
@@ -170,8 +171,8 @@ p.hide {
 .circle2{
     z-index: -1;
     position: absolute;
-    left: 58.25%;
-    top: 43.5%;
+    left: -40%;
+    top: -30%;
     background-color: white;
     border-radius: 40px;
     width: 3.75rem;
