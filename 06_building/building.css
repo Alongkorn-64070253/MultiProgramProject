@@ -1,13 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Mitr&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
 html{
     width: auto;
     height: 100%;
 }
+
 body{
-    height: 425%;
-    width: auto;
-    background-image: url("../images/Building.png");
+    --bgsize: 100%;
+    color: #f8f8f8;
+    font-family: 'Kanit', sans-serif;
+    text-shadow: 0px 2px 2px rgba(29, 29, 29, 0.55);
+    background-image: url("../images/scene_kengdorm.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: var(--bgsize);
     background-position: top;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    width: auto;
+    height: 370%;
+    transition: 1.5s;
+    overflow: scroll;
 }
 
+main{
+    height: auto;
+}
+
+#text-box {
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: fadeloop 1.25s alternate infinite;
+    /*animation: fadeInAnimation ease 3s;
+    -webkit-transition: all .5s;
+    transition: all .5s;*/
+}
+
+.dot{
+    cursor: pointer;
+    position: absolute;
+    left: 57%;
+    top: 340%;
+    background: grey;
+    border-radius: 40px;
+    width: 2rem;
+    height: 2rem;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+}
+
+.circle{
+    position: absolute;
+    margin-left: -40%;
+    margin-top: -30%;
+    background-color: grey;
+    border-radius: 40px;
+    width: 3.75rem;
+    height: 3.75rem;
+    opacity: 0.75;
+    animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+.img_pole{
+    position: absolute;
+    top: 210%;
+    left: auto;
+    width: 100%;
+    height: 170%;
+}
+
+
+@keyframes ping {
+    75%,
+    100% {
+      transform: scale(2);
+      opacity: 0;
+    }
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+@keyframes fadeloop {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+p { 
+    opacity: 1; 
+    transition-property: all;
+    transition-duration: 1.5s;
+    transition-timing-function: ease;
+    transition-delay: none; 
+}
+p.hide { 
+    opacity: 0;  
+}
