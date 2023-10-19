@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Mitr&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+html{
+    overflow-y: hidden;
+    height: 50%;
+    width: 100%;
+}
+body{
+    font-family: 'Kanit', sans-serif;
+    background-image: url("../images/7-11_scene.png");
+    background-repeat: no-repeat;
+    background-size: 200%;
+    overflow-y: hidden;
+}
