@@ -48,8 +48,8 @@ main{
 }
 .circle{
     position: absolute;
-    margin-left: -40%;
-    margin-top: -30%;
+    left: -45%;
+    top: -40%;
     background-color: grey;
     border-radius: 40px;
     width: 3.75rem;
