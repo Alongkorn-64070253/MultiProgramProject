@@ -8,7 +8,7 @@ body{
     font-family: 'Kanit', sans-serif;
     background-image: url("../images/7-11_scene.png");
     background-repeat: no-repeat;
-    background-size: 100%; 
+    background-size: cover;
 }
 .popup{
     position: absolute;
@@ -44,6 +44,34 @@ body{
     visibility: visible;
 }
 .circle{
+    z-index: -1;
+    position: absolute;
+    left: -45%;
+    top: -40%;
+    background-color: grey;
+    border-radius: 40px;
+    width: 3.75rem;
+    height: 3.75rem;
+    opacity: 0.75;
+    animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+.popup2{
+    position: absolute;
+    text-align: center;
+    cursor: pointer;
+    background-color: grey;
+    color: rgb(187, 187, 187);
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: 'Noto Sans Thai', sans-serif;
+    transition: 0.3s;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    top: 30%;
+    left: 90%;
+}
+.circle2{
     z-index: -1;
     position: absolute;
     left: -45%;
