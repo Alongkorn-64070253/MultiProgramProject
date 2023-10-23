@@ -105,6 +105,8 @@ body{
         left: 135%;
     }
     .popup .popuptext{
+        width: 2500px;
+        height: 2500px;
         transform: translate(-57%, -53%);
     }
 }
@@ -120,17 +122,34 @@ body{
         left: 190%;
     }
     .popup .popuptext{
-        transform: translate(-62%, -53%);
+        width: 2000px;
+        height: 2000px;
+        transform: translate(-67%, -53%);
     }
 }
 @media (width<=700px){
     .popup .popuptext{
-        width: 2500px;
-        height: 2500px;
-        transform: translate(-60%, -53%);
+        width: 1700px;
+        height: 1700px;
+        transform: translate(-65%, -53%);
     }
 }
 @media (width<=600px){
+    html{
+        width: 500%;
+        height: 150%;
+    }
+    .popup{
+        left: 90%;
+    }
+    .popup2{
+        left: 260%;
+    }
+    .popup .popuptext{
+        transform: translate(-62%, -53%);
+    }
+}
+@media (width<=400px){
     html{
         width: 500%;
         height: 150%;
