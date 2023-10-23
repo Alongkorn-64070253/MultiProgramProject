@@ -48,8 +48,8 @@ main{
 }
 .circle{
     position: absolute;
-    margin-left: -40%;
-    margin-top: -30%;
+    left: -45%;
+    top: -40%;
     background-color: grey;
     border-radius: 40px;
     width: 3.75rem;
@@ -68,7 +68,7 @@ main{
     background-image: url("../images/light_khengroom.png");
     top: 56%;
     left: 43.5%;
-    
+    animation: light 2s infinite;
     transform: translate(-50%, -50%);
 }
 @keyframes light{

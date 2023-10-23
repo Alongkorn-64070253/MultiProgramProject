@@ -159,8 +159,8 @@ p.hide {
 .circle{
     z-index: -1;
     position: absolute;
-    left: -40%;
-    top: -30%;
+    left: -45%;
+    top: -40%;
     background-color: white;
     border-radius: 40px;
     width: 3.75rem;
@@ -171,8 +171,8 @@ p.hide {
 .circle2{
     z-index: -1;
     position: absolute;
-    left: -40%;
-    top: -30%;
+    left: -45%;
+    top: -40%;
     background-color: white;
     border-radius: 40px;
     width: 3.75rem;

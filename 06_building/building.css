@@ -2,24 +2,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
 
 html{
-    width: auto;
+    width: 100%;
     height: 100%;
 }
 
 body{
+    width: auto;
+    height: 2400px;
     --bgsize: 100%;
     color: #f8f8f8;
     font-family: 'Kanit', sans-serif;
     text-shadow: 0px 2px 2px rgba(29, 29, 29, 0.55);
-    background-image: url("../images/scene_kengdorm.png");
     background-repeat: no-repeat;
     background-size: var(--bgsize);
     background-position: top;
     animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    width: auto;
-    height: 370%;
+    background-image: url("../images/scene_kengdorm1.jpg");
     transition: 1.5s;
     overflow: scroll;
 }
@@ -41,8 +41,38 @@ main{
     -webkit-transition: all .5s;
     transition: all .5s;*/
 }
+.dot1{
+    cursor: pointer;
+    position: absolute;
+    left: 37%;
+    top: 140%;
+    background: rgb(161, 0, 0);
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    transition: 0.3s;
+}
 
-.dot{
+.dot1 .dottext{
+    width:1800px;
+    height:4700px;
+    visibility: hidden;
+    background-image: url("../images/building_popup.png");
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-position: center;
+    background-color: rgb(0, 0, 0, 0.8);
+    position: absolute;
+    z-index: 3;
+    transform: translate(-32.5%, -50%);
+}
+.dot1 .show{
+    visibility: visible;
+}
+
+.dot2{
     cursor: pointer;
     position: absolute;
     left: 57%;
@@ -54,6 +84,7 @@ main{
     z-index: 2;
     transform: translate(-50%, -50%);
 }
+
 
 .circle{
     position: absolute;
@@ -67,12 +98,13 @@ main{
     animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
 }
 
+
 .img_pole{
     position: absolute;
     top: 210%;
-    left: auto;
+    left: 0%;
     width: 100%;
-    height: 170%;
+    height: 180%;
 }
 
 
@@ -112,3 +144,32 @@ p {
 p.hide { 
     opacity: 0;  
 }
+
+@media (width<=1500px) {
+    .dot1 {
+      transform: translate(-50px, 0%);
+    }
+    .dot2 {
+      transform: translate(50px, 0%);
+    }
+    .dot1 .dottext {
+      background-size: 5%;
+    }
+  }
+  @media (width<=1000px) {
+    .dot1 {
+      transform: translate(-100px, 0%);
+    }
+
+  }
+  @media (width<=700px) {
+    .dot1 {
+      transform: translate(-150px, 0%);
+    }
+  }
+  @media (width<=400px) {
+    .dot1 {
+      transform: translate(-150px, 0%);
+    }
+  }
+  
