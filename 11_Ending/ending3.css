@@ -16,7 +16,6 @@ body{
     animation-fill-mode: forwards;
     overflow: hidden;
     width: auto;
-    height: 1080px;
 }
 main{
     height: auto;

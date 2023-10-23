@@ -12,25 +12,11 @@ body{
     background-size: cover;
     background-position: center;
     overflow: hidden;
-    width: auto;
-    height: 1080px;
 }
-main{
-    height: auto;
-}
-.container{
-    width: auto;
-    margin: 0 10rem;
-}
-
-.content{
-    margin: 12% 0;
-    color: white;
-}
-
 #text-box {
+    color: white;
     cursor: pointer;
-    width: auto;
+    height: 100px;
     width: 100%;
     text-align: center;
     font-size: 30px;
@@ -58,9 +44,6 @@ main{
     .popup2{
         transform: translate(50px, 0%);
     }
-    .popup .popuptext{
-        background-size: 5%;
-    }
 }
 @media (width<=1000px){
     .popup{
@@ -72,12 +55,21 @@ main{
 }
 @media (width<=700px){
     .popup{
-        transform: translate(-150px, 0%);
+        transform: translate(-150px, 0%) scale(0.8);
+    }
+    .popup2{
+        transform: translate(100px, 0%) scale(0.8);
+    }
+    #text-box{
+        transform: scale(0.8) translate(-60%, -50%);
     }
 }
 @media (width<=400px){
     .popup{
-        transform: translate(-150px, 0%);
+        transform: translate(-100px, 0%) scale(0.8);
+    }
+    .popup2{
+        transform: translate(100px, 0%) scale(0.8);
     }
 }
 p { 

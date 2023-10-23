@@ -21,7 +21,8 @@ body{
     animation-fill-mode: forwards;
     background-image: url("../images/scene_kengdorm1.jpg");
     transition: 1.5s;
-    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 main{
@@ -86,7 +87,7 @@ main{
 }
 
 
-.circle{
+.circle1{
     position: absolute;
     margin-left: -40%;
     margin-top: -30%;
@@ -96,6 +97,17 @@ main{
     height: 3.75rem;
     opacity: 0.75;
     animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+.circle2{
+  position: absolute;
+  margin-left: -40%;
+  margin-top: -30%;
+  background-color: grey;
+  border-radius: 40px;
+  width: 3.75rem;
+  height: 3.75rem;
+  opacity: 0.75;
+  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
 }
 
 
@@ -134,6 +146,396 @@ main{
      }
 }
 
+
+
+
+
+
+
+
+@media (width<=1300px){
+
+  body{
+    width: auto;
+    height: 1736px;
+    position: bottom;
+}
+  .img_pole{
+    position: absolute;
+    top: 170%;
+    left: 0%;
+    width: 100%;
+    height: 110%;
+}
+  .circle1{
+    display: none;
+  }
+  .dot1{
+    display: none;
+  }
+  .dot2{
+    left: 57%;
+    top: 240%;
+  }
+}
+
+@media (width<=412px){
+
+  body{
+    width: auto;
+}
+  .img_pole{
+    top: 50%;
+    left: 0%;
+    width: 100%;
+    height: 40%;
+}
+  .circle1{
+    display: none;
+  }
+  .dot1{
+    display: none;
+  }
+  .dot2{
+    left: 57%;
+    top: 75%;
+    width: 1rem;
+    height: 1rem;
+  }
+  .circle2{
+    position: absolute;
+    margin-left: -40%;
+    margin-top: -30%;
+    background-color: grey;
+    border-radius: 40px;
+    width: 2.75rem;
+    height: 2.75rem;
+    opacity: 0.75;
+    animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+  }
+}
+
+@media (height<=914px){
+  body{
+    width: 412px;
+    height: 600px;
+}
+}
+
+
+@media (height<=800px){
+  body{
+    height: 800px;
+    position: bottom;
+}
+  .dot2{
+    left: 57%;
+    top: 275%;
+}
+  .img_pole{
+    position: absolute;
+    top: 190%;
+    left: 0%;
+    width: 100%;
+    height: 110%;
+}
+}
+@media (height<=750px){
+ 
+}
+@media (height<=600px){
+  .dot2{
+    left: 57%;
+    top: 285%;
+}
+  .img_pole{
+    position: absolute;
+    top: 210%;
+    left: 0%;
+    width: 100%;
+    height: 110%;
+}
+}
+
+@media (width=375px){
+ body{
+  --bgsize:200%;
+ }
+ .dot2{
+  left: 57%;
+  top: 185%;
+  width: 1rem;
+  height: 1rem;
+}
+.img_pole{
+  position: absolute;
+  top: 130%;
+  left: 0%;
+  width: 100%;
+  height: 80%;
+}
+}
+
+
+@media (width=414px){
+  body{
+   --bgsize:200%;
+  }
+  .dot2{
+   left: 57%;
+   top: 150%;
+   width: 1rem;
+   height: 1rem;
+ }
+ .img_pole{
+  position: absolute;
+  top: 110%;
+  left: 0%;
+  width: 100%;
+  height: 60%;
+}
+}
+
+@media (width=390px){
+  body{
+   --bgsize:200%;
+  }
+  .dot2{
+   left: 57%;
+   top: 150%;
+   width: 1rem;
+   height: 1rem;
+ }
+ .img_pole{
+  position: absolute;
+  top: 110%;
+  left: 0%;
+  width: 100%;
+  height: 60%;
+}
+}
+
+@media (width=393px){
+  body{
+   --bgsize:200%;
+  }
+  .dot2{
+   left: 57%;
+   top: 150%;
+   width: 1rem;
+   height: 1rem;
+ }
+ .img_pole{
+  position: absolute;
+  top: 110%;
+  left: 0%;
+  width: 100%;
+  height: 60%;
+}
+}
+
+@media (width=820px){
+  body{
+   --bgsize:200%;
+  }
+  .dot2{
+   left: 57%;
+   top: 230%;
+   width: 2rem;
+   height: 2rem;
+ }
+ .img_pole{
+  position: absolute;
+  top: 180%;
+  left: -50%;
+  width: 150%;
+  height: 90%;
+}
+  #text-box {
+  font-size: 40px;
+  top:30%;
+}
+}
+
+@media (width=768px){
+  body{
+   --bgsize:200%;
+  }
+  .dot2{
+   left: 57%;
+   top: 250%;
+   width: 2rem;
+   height: 2rem;
+ }
+ .img_pole{
+  position: absolute;
+  top: 195%;
+  left: -50%;
+  width: 150%;
+  height: 90%;
+}
+  #text-box {
+    font-size: 30px;
+    top:30%;
+}
+}
+
+@media (width=360px){
+  body{
+   --bgsize:200%;
+  }
+  .dot2{
+   left: 57%;
+   top: 160%;
+   width: 1rem;
+   height: 1rem;
+ }
+ .img_pole{
+  position: absolute;
+  top: 110%;
+  left: 0%;
+  width: 100%;
+  height: 70%;
+}
+#text-box {
+  font-size: 25px;
+  position: absolute;
+  top: 25%;
+}
+}
+
+@media (width=412px){
+  body{
+   --bgsize:230%;
+  }
+  .dot2{
+   left: 57%;
+   top: 180%;
+   width: 2rem;
+   height: 2rem;
+ }
+ .img_pole{
+  display: none;
+}
+#text-box {
+  font-size: 25px;
+  position: absolute;
+  top: 25%;
+}
+}
+
+
+
+
+@media (width=2560px){
+
+  body{
+    width: auto;
+    --bgsize:100%;
+}
+  .img_pole{
+    position: absolute;
+    top: 220%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+}
+  .dot1{
+    top:120%;
+    width:3rem;
+    height:3rem;
+  }
+  .dot2{
+    left: 57%;
+    top: 290%;
+    width:3rem;
+    height:3rem;
+  }  
+  #text-box {
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    top: 40%;
+    left: 50%;
+
+}
+}
+
+
+@media (width=1440px){
+
+  body{
+    width: auto;
+    --bgsize:150%;
+}
+  .img_pole{
+    position: absolute;
+    top: 260%;
+    left: 0%;
+    width: 110%;
+    height: 110%;
+}
+  .dot1{
+    left:30%;
+    top:130%;
+    width:3rem;
+    height:3rem;
+  }
+  .dot2{
+    left: 57%;
+    top: 340%;
+    width:3rem;
+    height:3rem;
+  }  
+  #text-box {
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    top: 40%;
+    left: 50%;
+
+}
+}
+
+
+@media (width=1024px){
+
+  body{
+    width: auto;
+    --bgsize:150%;
+}
+  .img_pole{
+    position: absolute;
+    top: 260%;
+    left: 0%;
+    width: 110%;
+    height: 110%;
+}
+  .dot1{
+    left:30%;
+    top:130%;
+    width:3rem;
+    height:3rem;
+  }
+  .dot2{
+    left: 57%;
+    top: 330%;
+    width:3rem;
+    height:3rem;
+  }  
+  #text-box {
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    top: 35%;
+    left: 50%;
+
+}
+}
+
+
+
+
 p { 
     opacity: 1; 
     transition-property: all;
@@ -144,32 +546,3 @@ p {
 p.hide { 
     opacity: 0;  
 }
-
-@media (width<=1500px) {
-    .dot1 {
-      transform: translate(-50px, 0%);
-    }
-    .dot2 {
-      transform: translate(50px, 0%);
-    }
-    .dot1 .dottext {
-      background-size: 5%;
-    }
-  }
-  @media (width<=1000px) {
-    .dot1 {
-      transform: translate(-100px, 0%);
-    }
-
-  }
-  @media (width<=700px) {
-    .dot1 {
-      transform: translate(-150px, 0%);
-    }
-  }
-  @media (width<=400px) {
-    .dot1 {
-      transform: translate(-150px, 0%);
-    }
-  }
-  
