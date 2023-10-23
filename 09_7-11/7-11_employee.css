@@ -58,3 +58,16 @@ p {
 p.hide { 
     opacity: 0;  
 }
+@media (width<=1500px){
+    body{
+        background-position: 40% 0%;
+    }
+}
+@media (width<=500px){
+    body{
+        background-position: 41% 0%;
+    }
+    #text-box{
+        font-size: 25px;
+    }
+}
