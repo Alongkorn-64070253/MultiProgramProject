@@ -5,7 +5,7 @@ html{
     overflow: hidden;
 }
 body{
-    background-image: url("../images/Home_Background.png");
+    background-image: url("images/Home_Background.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -415,7 +415,7 @@ a:hover{
 }
 
 #music input{
-    content: url("../images/Music_On.png");
+    content: url("images/Music_On.png");
     appearance: none;
     cursor: pointer;
     display: block;
@@ -423,5 +423,5 @@ a:hover{
     height: 40px;
 }
 #music input:checked{
-    content: url("../images/Music_Off.png");
+    content: url("images/Music_Off.png");
 }

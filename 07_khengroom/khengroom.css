@@ -68,7 +68,7 @@ main{
     background-image: url("../images/light_khengroom.png");
     top: 63%;
     left: 43.5%;
-    
+    animation: light 2s infinite;
     transform: translate(-50%, -50%);
 }
 @keyframes light{
