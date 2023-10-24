@@ -1,32 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Mitr&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
 
-html{
-    width: 100%;
-    height: 100%;
-}
 
 body{
-    width: auto;
-    height: 2400px;
-    --bgsize: 100%;
     color: #f8f8f8;
     font-family: 'Kanit', sans-serif;
     text-shadow: 0px 2px 2px rgba(29, 29, 29, 0.55);
+    background-image: url("../images/scene_kengdorm.png");
     background-repeat: no-repeat;
-    background-size: var(--bgsize);
-    background-position: top;
+    background-size: cover;
+    background-position: center;
     animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    background-image: url("../images/scene_kengdorm1.jpg");
+    width: 100%;
+    height: 2900px;
     transition: 1.5s;
-    overflow-y: scroll;
-    overflow-x: hidden;
+    overflow: scroll;
+    margin: 0;
+    padding: 0;
 }
 
 main{
     height: auto;
+}
+
+content{
+    width: 100vw;
+    height: 2900px;
 }
 
 #text-box {
@@ -42,42 +43,12 @@ main{
     -webkit-transition: all .5s;
     transition: all .5s;*/
 }
-.dot1{
+
+.dot{
     cursor: pointer;
     position: absolute;
-    left: 37%;
-    top: 140%;
-    background: rgb(161, 0, 0);
-    border-radius: 50%;
-    width: 2rem;
-    height: 2rem;
-    z-index: 2;
-    transform: translate(-50%, -50%);
-    transition: 0.3s;
-}
-
-.dot1 .dottext{
-    width:1800px;
-    height:4700px;
-    visibility: hidden;
-    background-image: url("../images/building_popup.png");
-    background-repeat: no-repeat;
-    background-size: 30%;
-    background-position: center;
-    background-color: rgb(0, 0, 0, 0.8);
-    position: absolute;
-    z-index: 3;
-    transform: translate(-32.5%, -50%);
-}
-.dot1 .show{
-    visibility: visible;
-}
-
-.dot2{
-    cursor: pointer;
-    position: absolute;
-    left: 57%;
-    top: 340%;
+    left: 53%;
+    bottom: -200%;
     background: grey;
     border-radius: 40px;
     width: 2rem;
@@ -86,11 +57,10 @@ main{
     transform: translate(-50%, -50%);
 }
 
-
-.circle1{
+.circle{
     position: absolute;
-    margin-left: -40%;
-    margin-top: -30%;
+    left: -45%;
+    top: -40%;
     background-color: grey;
     border-radius: 40px;
     width: 3.75rem;
@@ -98,25 +68,13 @@ main{
     opacity: 0.75;
     animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
 }
-.circle2{
-  position: absolute;
-  margin-left: -40%;
-  margin-top: -30%;
-  background-color: grey;
-  border-radius: 40px;
-  width: 3.75rem;
-  height: 3.75rem;
-  opacity: 0.75;
-  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
-}
-
 
 .img_pole{
     position: absolute;
     top: 210%;
-    left: 0%;
+    left: auto;
     width: 100%;
-    height: 180%;
+    height: 170%;
 }
 
 
@@ -146,396 +104,6 @@ main{
      }
 }
 
-
-
-
-
-
-
-
-@media (width<=1300px){
-
-  body{
-    width: auto;
-    height: 1736px;
-    position: bottom;
-}
-  .img_pole{
-    position: absolute;
-    top: 170%;
-    left: 0%;
-    width: 100%;
-    height: 110%;
-}
-  .circle1{
-    display: none;
-  }
-  .dot1{
-    display: none;
-  }
-  .dot2{
-    left: 57%;
-    top: 240%;
-  }
-}
-
-@media (width<=412px){
-
-  body{
-    width: auto;
-}
-  .img_pole{
-    top: 50%;
-    left: 0%;
-    width: 100%;
-    height: 40%;
-}
-  .circle1{
-    display: none;
-  }
-  .dot1{
-    display: none;
-  }
-  .dot2{
-    left: 57%;
-    top: 75%;
-    width: 1rem;
-    height: 1rem;
-  }
-  .circle2{
-    position: absolute;
-    margin-left: -40%;
-    margin-top: -30%;
-    background-color: grey;
-    border-radius: 40px;
-    width: 2.75rem;
-    height: 2.75rem;
-    opacity: 0.75;
-    animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
-  }
-}
-
-@media (height<=914px){
-  body{
-    width: 412px;
-    height: 600px;
-}
-}
-
-
-@media (height<=800px){
-  body{
-    height: 800px;
-    position: bottom;
-}
-  .dot2{
-    left: 57%;
-    top: 275%;
-}
-  .img_pole{
-    position: absolute;
-    top: 190%;
-    left: 0%;
-    width: 100%;
-    height: 110%;
-}
-}
-@media (height<=750px){
- 
-}
-@media (height<=600px){
-  .dot2{
-    left: 57%;
-    top: 285%;
-}
-  .img_pole{
-    position: absolute;
-    top: 210%;
-    left: 0%;
-    width: 100%;
-    height: 110%;
-}
-}
-
-@media (width=375px){
- body{
-  --bgsize:200%;
- }
- .dot2{
-  left: 57%;
-  top: 185%;
-  width: 1rem;
-  height: 1rem;
-}
-.img_pole{
-  position: absolute;
-  top: 130%;
-  left: 0%;
-  width: 100%;
-  height: 80%;
-}
-}
-
-
-@media (width=414px){
-  body{
-   --bgsize:200%;
-  }
-  .dot2{
-   left: 57%;
-   top: 150%;
-   width: 1rem;
-   height: 1rem;
- }
- .img_pole{
-  position: absolute;
-  top: 110%;
-  left: 0%;
-  width: 100%;
-  height: 60%;
-}
-}
-
-@media (width=390px){
-  body{
-   --bgsize:200%;
-  }
-  .dot2{
-   left: 57%;
-   top: 150%;
-   width: 1rem;
-   height: 1rem;
- }
- .img_pole{
-  position: absolute;
-  top: 110%;
-  left: 0%;
-  width: 100%;
-  height: 60%;
-}
-}
-
-@media (width=393px){
-  body{
-   --bgsize:200%;
-  }
-  .dot2{
-   left: 57%;
-   top: 150%;
-   width: 1rem;
-   height: 1rem;
- }
- .img_pole{
-  position: absolute;
-  top: 110%;
-  left: 0%;
-  width: 100%;
-  height: 60%;
-}
-}
-
-@media (width=820px){
-  body{
-   --bgsize:200%;
-  }
-  .dot2{
-   left: 57%;
-   top: 230%;
-   width: 2rem;
-   height: 2rem;
- }
- .img_pole{
-  position: absolute;
-  top: 180%;
-  left: -50%;
-  width: 150%;
-  height: 90%;
-}
-  #text-box {
-  font-size: 40px;
-  top:30%;
-}
-}
-
-@media (width=768px){
-  body{
-   --bgsize:200%;
-  }
-  .dot2{
-   left: 57%;
-   top: 250%;
-   width: 2rem;
-   height: 2rem;
- }
- .img_pole{
-  position: absolute;
-  top: 195%;
-  left: -50%;
-  width: 150%;
-  height: 90%;
-}
-  #text-box {
-    font-size: 30px;
-    top:30%;
-}
-}
-
-@media (width=360px){
-  body{
-   --bgsize:200%;
-  }
-  .dot2{
-   left: 57%;
-   top: 160%;
-   width: 1rem;
-   height: 1rem;
- }
- .img_pole{
-  position: absolute;
-  top: 110%;
-  left: 0%;
-  width: 100%;
-  height: 70%;
-}
-#text-box {
-  font-size: 25px;
-  position: absolute;
-  top: 25%;
-}
-}
-
-@media (width=412px){
-  body{
-   --bgsize:230%;
-  }
-  .dot2{
-   left: 57%;
-   top: 180%;
-   width: 2rem;
-   height: 2rem;
- }
- .img_pole{
-  display: none;
-}
-#text-box {
-  font-size: 25px;
-  position: absolute;
-  top: 25%;
-}
-}
-
-
-
-
-@media (width=2560px){
-
-  body{
-    width: auto;
-    --bgsize:100%;
-}
-  .img_pole{
-    position: absolute;
-    top: 220%;
-    left: 0%;
-    width: 100%;
-    height: 100%;
-}
-  .dot1{
-    top:120%;
-    width:3rem;
-    height:3rem;
-  }
-  .dot2{
-    left: 57%;
-    top: 290%;
-    width:3rem;
-    height:3rem;
-  }  
-  #text-box {
-    width: 100%;
-    text-align: center;
-    font-size: 50px;
-    top: 40%;
-    left: 50%;
-
-}
-}
-
-
-@media (width=1440px){
-
-  body{
-    width: auto;
-    --bgsize:150%;
-}
-  .img_pole{
-    position: absolute;
-    top: 260%;
-    left: 0%;
-    width: 110%;
-    height: 110%;
-}
-  .dot1{
-    left:30%;
-    top:130%;
-    width:3rem;
-    height:3rem;
-  }
-  .dot2{
-    left: 57%;
-    top: 340%;
-    width:3rem;
-    height:3rem;
-  }  
-  #text-box {
-    width: 100%;
-    text-align: center;
-    font-size: 50px;
-    top: 40%;
-    left: 50%;
-
-}
-}
-
-
-@media (width=1024px){
-
-  body{
-    width: auto;
-    --bgsize:150%;
-}
-  .img_pole{
-    position: absolute;
-    top: 260%;
-    left: 0%;
-    width: 110%;
-    height: 110%;
-}
-  .dot1{
-    left:30%;
-    top:130%;
-    width:3rem;
-    height:3rem;
-  }
-  .dot2{
-    left: 57%;
-    top: 330%;
-    width:3rem;
-    height:3rem;
-  }  
-  #text-box {
-    width: 100%;
-    text-align: center;
-    font-size: 50px;
-    top: 35%;
-    left: 50%;
-
-}
-}
-
-
-
-
 p { 
     opacity: 1; 
     transition-property: all;
@@ -545,4 +113,30 @@ p {
 }
 p.hide { 
     opacity: 0;  
+}
+
+@media (width<=500px){
+    html{
+        height: 100vh;
+        width: auto;
+    }
+    body{
+        background-image: url("../images/mobile_building.png");
+        height: 100vh;
+        width: auto;
+        background-size: cover;
+        margin: 0;
+        padding: 0;
+    }
+    #text-box{
+        font-size: 16px;
+        top: 30%;
+    }
+    .dot{
+        position: absolute;
+        bottom: 5%;
+    }
+    .img_pole {
+        visibility: hidden;
+    }
 }
