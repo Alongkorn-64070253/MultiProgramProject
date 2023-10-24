@@ -7,5 +7,5 @@ function poptext2() {
     popup.classList.toggle("show");
 }
 function poptext3() {
-    location.href = '../09_7-11/7-11.html'
+    location.href = '../12_Ending/ending1.html'
 }

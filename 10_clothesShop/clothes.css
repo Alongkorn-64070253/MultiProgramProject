@@ -173,6 +173,10 @@ p.hide {
     .popup{
         left: 40%;
     }
+    .returnsoi1 {
+        top: 20%;
+        font-size: 22px;
+    }
 }
 @media (height<=700px){
     .popup{
