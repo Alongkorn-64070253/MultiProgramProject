@@ -184,8 +184,8 @@ main{
 }
 @media (height<=750px){
     .logo{
-        width: 350px;
-        height: 220px;
+        width: 300px;
+        height: 200px;
     }
     .find-button{
         width: 5rem;

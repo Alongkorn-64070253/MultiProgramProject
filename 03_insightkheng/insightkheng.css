@@ -93,22 +93,50 @@ body{
         margin: 5rem;
     }
 }
-@media (width<=700px){
+@media (width<=600px){
+    .container{
+        margin: 0;
+    }
     body{
+        background-size: cover;
+    }
+}
+@media (width<=530px){
+    body{
+        background-size: cover;
         background-position: center;
+        background-image: url("../images/mobile_scene_picture.png");
     }
     .container{
         margin: 0;
+    }
+    #text-box {
+        font-size: 20px;
+    }
+    #text-box2 {
+        width: 70vw;
+        font-size: 20px;
     }
 }
 @media (width<=400px){
     body{
         background-position: center;
     }
+    body{
+        background-image: url("../images/mobile_scene_picture.png");
+    }
     .container{
         margin: 0;
     }
+    #text-box {
+        font-size: 15px;
+    }
+    #text-box2 {
+        width: 70vw;
+        font-size: 20px;
+    }
 }
+
 p { 
     opacity: 1; 
     transition-property: all;

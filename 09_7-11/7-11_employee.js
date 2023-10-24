@@ -8,6 +8,6 @@ function change() {
         p.classList.remove('hide')
     }, 1500);
     if (idx == 5){
-        location.href = '#'
+        location.href = '../11_Soi_Lat_Phrao2/Soi_Lat_Phrao2.html'
     };
 }

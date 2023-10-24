@@ -8,7 +8,7 @@ function change() {
         p.classList.remove('hide')
     }, 1500);
     if (idx == 3){
-        location.href = '#'
+        location.href = '../08_Soi_Lat_Phrao1/Soi_Lat_Phrao1.html';
     };
 }
 

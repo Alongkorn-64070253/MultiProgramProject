@@ -1,37 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Mitr&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
 
-/*html{
-  width: 6000px;
-  height: 100%;
-  overflow-y: hidden;
-}
-body{
-  font-family: 'Kanit', sans-serif;
-  background-image: url("../images/Soi1bg.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 0% 0%;
-  overflow-y: hidden;
-}
-
-main{
-  height: auto;
-}
-.outer-container{
-  width: auto;
-  margin: 0 10rem;
-}
-
-.content{
-  margin: 12% 0;
-  color: white;
-}*/
-
 body {
   font-family: "Kanit", sans-serif;
-  text-shadow: 0px 2px 2px rgba(29, 29, 29, 0.55);
-  color: white;
   /*background-image: url("../images/Soi1bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -56,7 +27,7 @@ body {
   display: none;
 }
 
-/*#scrollbar::-webkit-scrollbar-thumb
+/* #scrollbar::-webkit-scrollbar-thumb
 {
 	border-radius: 10px;
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
@@ -74,18 +45,10 @@ body {
 .content {
   width: 6000px;
   height: 100vh;
-  background-image: url("../images/Soi1bg.jpg");
+  background-image: url("../images/fullSoi2bg.png");
   background-size: cover;
   background-repeat: no-repeat;
-}
-
-div.GoRight{
-  bottom: 4.9vh;
-  left: 50vw;
-  transform: translate(-50%, -50%);
-  position: absolute;
-  font-size: 20px;
-  animation: fadeInAnimation 1.25s alternate infinite;
+  overflow: hidden;
 }
 
 @keyframes fadeInAnimation {
@@ -96,7 +59,6 @@ div.GoRight{
     opacity: 1;
   }
 }
-
 /*
 @media (width<=1500px) {
   .popup {
@@ -126,8 +88,8 @@ div.GoRight{
   .popup {
     transform: translate(-150px, 0%);
   }
-}*/
-
+}
+*/
 p {
   opacity: 1;
   transition-property: all;
@@ -154,108 +116,80 @@ p.hide {
 }
 
 .pop1 {
-  top: 42%;
-  left: 16%;
+  top: 70%;
+  left: 22.5%;
+  background-color: rgb(180, 72, 72);
 }
 
 .pop2 {
-  top: 65%;
-  left: 39%;
+  top: 66%;
+  left: 73.5%;
+  background-color: rgb(180, 72, 72);
 }
 
 .pop3 {
-  background-color: rgb(246, 78, 78);
-  top: 62%;
-  left: 72.5%;
+  top: 34%;
+  left: 90%;
 }
 
 .pop4 {
-  top: 69%;
-  left: 77%;
-}
-
-.pop5 {
-  background-color: rgb(246, 78, 78);
-  top: 62%;
-  left: 88%;
+  top: 45%;
+  left: 59%;
 }
 
 .popuptext1 {
-  width: 300px;
-  height: 440px;
-  visibility: hidden;
-  background-image: url("../images/bill_travel.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: absolute;
-  z-index: 3;
-  transform: translate(40%, -50%);
+    width: 300px;
+    height: 440px;
+    visibility: hidden;
+    background-image: url("../images/txthuman.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: 3;
+    transform: translate(40%, -50%);
 }
-.popuptext3 {
-  width: 300px;
-  height: 440px;
-  visibility: hidden;
-  background-image: url("../images/Notkheng1.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  position: absolute;
-  z-index: 3;
-  transform: translate(-105%, -80%);
-}
-.popuptext5 {
-  width: 300px;
-  height: 440px;
-  visibility: hidden;
-  background-image: url("../images/Notkheng2.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  position: absolute;
-  z-index: 3;
-  transform: translate(40%, -50%);
-}
-
 .pop1 .show {
   visibility: visible;
+}
+
+.popuptext2 {
+    width: 310px;
+    height: 495px;
+    visibility: hidden;
+    background-image: url("../images/txthuman1.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: 3;
+    transform: translate(40%, -50%);
 }
 .pop2 .show {
   visibility: visible;
 }
-.pop3 .show {
-  visibility: visible;
-}
-.pop4 .show {
-  visibility: visible;
-}
-.pop5 .show {
-  visibility: visible;
-}
-
 .circle {
   z-index: 1;
   position: absolute;
   left: -45%;
   top: -40%;
-  background-color: white;
+  background-color: rgb(218, 78, 78);
   border-radius: 40px;
   width: 3.75rem;
   height: 3.75rem;
   opacity: 0.75;
   animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
 }
-
 .circle2 {
-  z-index: 1;
-  position: absolute;
-  left: -45%;
-  top: -40%;
-  background-color: rgb(233, 121, 121);
-  border-radius: 40px;
-  width: 3.75rem;
-  height: 3.75rem;
-  opacity: 0.75;
-  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
-}
-
+    z-index: 1;
+    position: absolute;
+    left: -45%;
+    top: -40%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 40px;
+    width: 3.75rem;
+    height: 3.75rem;
+    opacity: 0.75;
+    animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+  }
 
 @keyframes ping {
   75%,
@@ -264,3 +198,46 @@ p.hide {
     opacity: 0;
   }
 }
+
+.car_soi2 {
+    position: absolute;
+    width: 1700px;
+    height: 700px;
+    background-image: url("../images/car_soi2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 35%;
+    left : 30%;
+    animation: car_soi2_move 15s;
+    animation-iteration-count: 1;
+    visibility: hidden;
+}
+
+@keyframes car_soi2_move {
+    0%   {left:10%;visibility: visible;}
+    100% {left:100%;}
+}
+
+/* .human1 {
+    position: absolute;
+    width: 610px;
+    height: 980px;
+    background-image: url("../images/soi2human01.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 30%;
+    left : 49.5%;
+    z-index: 1;
+} */
+
+/* .human2 {
+    position: absolute;
+    width: 600px;
+    height: 980px;
+    background-image: url("../images/soi2human02.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 7.5%;
+    left : 89.5%;
+    z-index: 1;
+} */

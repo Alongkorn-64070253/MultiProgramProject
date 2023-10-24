@@ -20,6 +20,10 @@ function change() {
         }
 
     if (count == 2){
+        body.style.setProperty('--bgposition', '50% 50%');
+        body.style.setProperty('--bgsize', 'cover');
+    }
+    if (count == 3){
         location.href = '../04_tableclass/tableclass.html'
     }
     count++;

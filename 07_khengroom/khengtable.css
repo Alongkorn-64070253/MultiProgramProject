@@ -12,6 +12,8 @@ body{
     background-size: cover;
     background-position: center;
     overflow: hidden;
+    width: auto;
+    height: 1080px;
 }
 #text-box {
     color: white;
@@ -177,5 +179,25 @@ p.hide {
     100% {
       transform: scale(2);
       opacity: 0;
+    }
+}
+
+@media (width<=580px){
+    body{
+        background-image: url("../images/mobile_khengtable.png");
+    }
+    .popup{
+        left: 35%;
+        top: 70%;
+    }
+    .popup2{
+        left: 20%;
+        top: 50%;
+    }
+    .popup .popuptext{
+        transform: translate(-40%, -56%);
+    }
+    .popup2 .popuptext2{
+        transform: translate(-49%, -49%);
     }
 }

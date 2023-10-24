@@ -369,3 +369,34 @@ main{
         transform: rotate(15deg);
     }
 }
+
+@media (width<=1000px){
+    .image{
+        width: 225px;
+    }
+}
+@media (width<=850px){
+    .image{
+        width: 200px;
+    }
+}
+@media (width<=700px){
+    .image{
+        width: 175px;
+    }
+}
+@media (width<=600px){
+    .image{
+        width: 150px;
+    }
+}
+@media (width<=500px){
+    .image{
+        width: 100px;
+    }
+}
+@media (width<=400px){
+    .image{
+        width: 75px;
+    }
+}

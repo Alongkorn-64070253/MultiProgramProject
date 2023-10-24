@@ -41,39 +41,14 @@ main{
         opacity: 1;
      }
 }
-@media (width<=1500px){
-    .container{
-        margin: 0;
-    }
-}
-@media (width<=1000px){
-    .container{
-        margin: 0;
-    }
-}
-@media (width<=700px){
-    body{
-        background-position: right;
-    }
-    .container{
-        margin: 0;
-    }
-}
-@media (width<=400px){
-    body{
-        background-position: right;
-    }
-    .container{
-        margin: 0;
-    }
-}
-p { 
+
+/* p { 
     opacity: 1; 
     transition-property: all;
     transition-duration: 1.5s;
     transition-timing-function: ease;
     transition-delay: none; 
-}
+} */
 p.hide { 
     opacity: 0;  
 }
@@ -148,3 +123,81 @@ p.hide {
     margin-bottom: 3%;
     font-size: 30px;
 }
+@media (width<=1800px){
+    .popup{
+        left: 15%;
+    }
+}
+@media (width<=1500px){
+    .container{
+        margin: 0;
+    }
+    body{
+        background-position: 0%;
+    }
+    .popup{
+        left: 35%;
+    }
+}
+@media (width<=1250px){
+    .popup{
+        left: 45%;
+    }
+    .popup .popuptext {
+        transform: translate(-42%, -50%);
+    }
+}
+@media (width<=920px){
+    body{
+        background-image: url("../images/mobile_clothesShop.png");
+    }
+    .container{
+        margin: 0;
+    }
+    .popup .popuptext {
+        transform: translate(-49%, -50%);
+        background-size: 12%;
+    }
+}
+@media (width<=500px){
+    .popup{
+        left: 60%;
+    }
+    .popup .popuptext {
+        background-size: 10%;
+        transform: translate(-51.5%, -50%);
+    }
+}
+
+@media (height<=900px){
+    .popup{
+        left: 40%;
+    }
+}
+@media (height<=700px){
+    .popup{
+        left: 30%;
+    }
+    .popup .popuptext {
+        background-size: 10%;
+    }
+}
+@media (height<=500px){
+    .popup{
+        left: 25%;
+    }
+    .popup .popuptext {
+        background-size: 8%;
+    }
+}
+
+.returnsoi1 {
+    position: absolute;
+    cursor:pointer;
+    padding: 5rem;
+    top: 80%;
+    font-size: 22px;
+    transition-duration: 0.5s;
+}
+
+.returnsoi1:hover {font-size: 23px;}

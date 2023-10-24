@@ -10,3 +10,7 @@ function myFunction() {
     var popup = document.getElementById("myPopup");
     popup.classList.toggle("show");
 }
+
+function returnsoi1() {
+    location.href = '../08_Soi_Lat_Phrao1/Soi_Lat_Phrao1.html'
+}

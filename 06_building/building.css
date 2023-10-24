@@ -1,31 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Mitr&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
 
-html{
-    width: auto;
-    height: 100%;
-}
+@import url('https://fonts.googleapis.com/css2?family=Mitr&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
 
 body{
-    --bgsize: 100%;
     color: #f8f8f8;
     font-family: 'Kanit', sans-serif;
     text-shadow: 0px 2px 2px rgba(29, 29, 29, 0.55);
     background-image: url("../images/scene_kengdorm.png");
     background-repeat: no-repeat;
-    background-size: var(--bgsize);
-    background-position: top;
+    background-size: cover;
+    background-position: center;
     animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    width: auto;
-    height: 370%;
+    width: 100%;
+    height: 2900px;
     transition: 1.5s;
     overflow: scroll;
+    margin: 0;
+    padding: 0;
 }
 
 main{
     height: auto;
+}
+
+content{
+    width: 100vw;
+    height: 2900px;
 }
 
 #text-box {
@@ -45,8 +50,8 @@ main{
 .dot{
     cursor: pointer;
     position: absolute;
-    left: 57%;
-    top: 340%;
+    left: 53%;
+    bottom: -200%;
     background: grey;
     border-radius: 40px;
     width: 2rem;
@@ -111,4 +116,30 @@ p {
 }
 p.hide { 
     opacity: 0;  
+}
+
+@media (width<=500px){
+    html{
+        height: 100vh;
+        width: auto;
+    }
+    body{
+        background-image: url("../images/mobile_building.png");
+        height: 100vh;
+        width: auto;
+        background-size: cover;
+        margin: 0;
+        padding: 0;
+    }
+    #text-box{
+        font-size: 16px;
+        top: 33%;
+    }
+    .dot{
+        position: absolute;
+        bottom: 5%;
+    }
+    .img_pole {
+        visibility: hidden;
+    }
 }

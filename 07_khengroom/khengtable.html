@@ -11,7 +11,7 @@
     <script src="khengtable.js"></script>
     <title>My Missing Friend</title>
 </head>
-<body>
+<body onclick="change()">
     <main>
       <div class="container">
         <div class="container-space">
@@ -24,15 +24,15 @@
                 <span class="popuptext2" id="myPopup2"></span>
                 <span class="circle2"></span>
             </div>
-            <p id="text-box" onclick="change()">บนโต๊ะเก่งมีแต่ใบเสร็จ</p>
+            <p id="text-box">บนโต๊ะเก่งมีแต่ใบเสร็จ</p>
           </div>
         </div>
       </div>
     </main>
     <script>
         var txtList = [
-            'ย่านลาดพร้าว?', 'ร้านสะดวกซื้อและงานพิเศษ?'
-            , 'ไปตามหาเบาะแสของเก่งที่ซอยลาดพร้าว', 'บนโต๊ะเก่งมีแต่ใบเสร็จ'
+          'ย่านลาดพร้าว?', 'ร้านสะดวกซื้อและงานพิเศษ?'
+            , 'ไปตามหาเบาะแสของเก่งที่ซอยลาดพร้าว', ''
         ], idx = 0,
             p = document.getElementById('text-box');
 
